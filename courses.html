@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Browse all our practical skills training courses at Empowering The Nation. Choose from 6-week short skills and 6-month learnerships.">
+    <meta name="keywords"
+        content="courses, skills training, first aid, sewing, landscaping, life skills, child minding, cooking, garden maintenance, learnerships, short courses">
+    <title>Our Courses - Empowering The Nation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="_images/logo/Logo.jpeg" alt="Empowering The Nation Logo" class="logo-img">
+                    <span class="logo-text">Empowering The Nation</span>
+                </div>
+
+                <nav class="desktop-nav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="courses.html" class="nav-link active">Courses</a>
+                        <a href="pricing.html" class="nav-link">Pricing</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+
+                    <div class="nav-cta">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" id="theme-toggle" title="Toggle dark/light theme">
+                            <span class="theme-slider"></span>
+                        </label>
+                        <a href="enroll.html" class="btn btn-primary active">Enroll Now</a>
+                    </div>
+                </nav>
+
+                <div class="mobile-menu-btn">
+                    <button class="mobile-menu-button" aria-label="Open menu">
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2 class="mobile-menu-title">Menu</h2>
+            <button class="close-mobile-menu" aria-label="Close menu">
+                <span class="close-icon"></span>
+            </button>
+        </div>
+
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="courses.html" class="mobile-nav-link active">Courses</a>
+            <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            <div class="mobile-nav-cta">
+                <a href="enroll.html" class="btn btn-primary">Enroll Now</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumbs -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span class="breadcrumb-current">Our Courses</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Our Courses</h1>
+                    <p class="hero-description">Practical, accredited training designed for real-world application and
+                        career advancement</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="featured-courses">
+            <div class="courses-container">
+                <!-- Course Filters -->
+                <div class="course-filters">
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">All Courses</button>
+                        <button class="filter-btn" data-filter="short">Short Skills (6 weeks)</button>
+                        <button class="filter-btn" data-filter="learnership">Learnerships (6 months)</button>
+                    </div>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" id="course-search" placeholder="Search courses by name or description..."
+                            class="search-input">
+                        <div class="search-icon">
+                            <span>🔍</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Course Grid -->
+                <div id="courses-grid" class="courses-grid">
+                    <!-- First Aid Course -->
+                    <div class="course-card card-hover" data-category="short">
+                        <div class="img-hover-zoom">
+                            <img src="_images/screens/First aid.jpg" alt="First Aid Course" class="course-img">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-header">
+                                <div class="course-icon">🩹</div>
+                                <div>
+                                    <h3 class="course-title">First Aid Level 1</h3>
+                                    <span class="course-badge">Short Skill</span>
+                                </div>
+                            </div>
+                            <p class="course-description">Essential first aid skills for workplace and home safety.
+                                Learn life-saving techniques and emergency response procedures.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">Duration: 6 weeks</span>
+                                <span class="course-price">From R1500</span>
+                            </div>
+                            <div class="course-outcomes">
+                                <h4 class="outcomes-title">Learning Outcomes:</h4>
+                                <ul class="outcomes-list">
+                                    <li>CPR certification</li>
+                                    <li>Emergency response</li>
+                                    <li>Wound care</li>
+                                    <li>Basic life support</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="pricing.html" class="btn btn-accent">Add to Quote</a>
+                                <button class="btn btn-outline course-detail-btn"
+                                    data-course="first-aid">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sewing Course -->
+                    <div class="course-card card-hover" data-category="short">
+                        <div class="img-hover-zoom">
+                            <img src="_images/screens/Sewing.jpg" alt="Sewing Course" class="course-img">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-header">
+                                <div class="course-icon">🧵</div>
+                                <div>
+                                    <h3 class="course-title">Sewing Essentials</h3>
+                                    <span class="course-badge">Short Skill</span>
+                                </div>
+                            </div>
+                            <p class="course-description">Master basic to intermediate sewing techniques. Perfect for
+                                starting a small business or enhancing your skills.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">Duration: 6 weeks</span>
+                                <span class="course-price">From R1500</span>
+                            </div>
+                            <div class="course-outcomes">
+                                <h4 class="outcomes-title">Learning Outcomes:</h4>
+                                <ul class="outcomes-list">
+                                    <li>Pattern reading</li>
+                                    <li>Machine operation</li>
+                                    <li>Garment construction</li>
+                                    <li>Alterations</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="pricing.html" class="btn btn-accent">Add to Quote</a>
+                                <button class="btn btn-outline course-detail-btn" data-course="sewing">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Landscaping Course -->
+                    <div class="course-card card-hover" data-category="learnership">
+                        <div class="img-hover-zoom">
+                            <img src="_images/screens/Garden maintenance .jpg" alt="Landscaping Course"
+                                class="course-img">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-header">
+                                <div class="course-icon">🌿</div>
+                                <div>
+                                    <h3 class="course-title">Landscaping</h3>
+                                    <span class="course-badge learnership">Learnership</span>
+                                </div>
+                            </div>
+                            <p class="course-description">Complete landscaping and garden design training. Learn to
+                                create and maintain beautiful outdoor spaces.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">Duration: 6 months</span>
+                                <span class="course-price">From R4500</span>
+                            </div>
+                            <div class="course-outcomes">
+                                <h4 class="outcomes-title">Learning Outcomes:</h4>
+                                <ul class="outcomes-list">
+                                    <li>Plant knowledge</li>
+                                    <li>Design principles</li>
+                                    <li>Irrigation systems</li>
+                                    <li>Maintenance</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="pricing.html" class="btn btn-accent">Add to Quote</a>
+                                <button class="btn btn-outline course-detail-btn"
+                                    data-course="landscaping">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Life Skills Course -->
+                    <div class="course-card card-hover" data-category="short">
+                        <div class="img-hover-zoom">
+                            <img src="_images/screens/Life skill.jpg" alt="Life Skills Course" class="course-img">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-header">
+                                <div class="course-icon">💡</div>
+                                <div>
+                                    <h3 class="course-title">Life Skills</h3>
+                                    <span class="course-badge">Short Skill</span>
+                                </div>
+                            </div>
+                            <p class="course-description">Develop essential personal and professional skills for success
+                                in work and life.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">Duration: 6 weeks</span>
+                                <span class="course-price">From R1500</span>
+                            </div>
+                            <div class="course-outcomes">
+                                <h4 class="outcomes-title">Learning Outcomes:</h4>
+                                <ul class="outcomes-list">
+                                    <li>Communication skills</li>
+                                    <li>Financial literacy</li>
+                                    <li>Problem solving</li>
+                                    <li>Time management</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="pricing.html" class="btn btn-accent">Add to Quote</a>
+                                <button class="btn btn-outline course-detail-btn"
+                                    data-course="life-skills">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Child Minding Course -->
+                    <div class="course-card card-hover" data-category="short">
+                        <div class="img-hover-zoom">
+                            <img src="_images/screens/Child minding.jpg" alt="Child Minding Course" class="course-img">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-header">
+                                <div class="course-icon">👶</div>
+                                <div>
+                                    <h3 class="course-title">Child Minding</h3>
+                                    <span class="course-badge">Short Skill</span>
+                                </div>
+                            </div>
+                            <p class="course-description">Professional childcare training for aspiring nannies, au
+                                pairs, and daycare providers.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">Duration: 6 weeks</span>
+                                <span class="course-price">From R750</span>
+                            </div>
+                            <div class="course-outcomes">
+                                <h4 class="outcomes-title">Learning Outcomes:</h4>
+                                <ul class="outcomes-list">
+                                    <li>Child development</li>
+                                    <li>Safety protocols</li>
+                                    <li>Nutrition planning</li>
+                                    <li>Activity planning</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="pricing.html" class="btn btn-accent">Add to Quote</a>
+                                <button class="btn btn-outline course-detail-btn"
+                                    data-course="child-minding">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cooking Course -->
+                    <div class="course-card card-hover" data-category="short">
+                        <div class="img-hover-zoom">
+                            <img src="_images/screens/Cooking.jpg" alt="Cooking Course" class="course-img">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-header">
+                                <div class="course-icon">🍳</div>
+                                <div>
+                                    <h3 class="course-title">Cooking</h3>
+                                    <span class="course-badge">Short Skill</span>
+                                </div>
+                            </div>
+                            <p class="course-description">Learn fundamental cooking techniques and meal preparation for
+                                home or small catering business.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">Duration: 6 weeks</span>
+                                <span class="course-price">From R750</span>
+                            </div>
+                            <div class="course-outcomes">
+                                <h4 class="outcomes-title">Learning Outcomes:</h4>
+                                <ul class="outcomes-list">
+                                    <li>Basic cooking methods</li>
+                                    <li>Food safety</li>
+                                    <li>Meal planning</li>
+                                    <li>Nutrition basics</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="pricing.html" class="btn btn-accent">Add to Quote</a>
+                                <button class="btn btn-outline course-detail-btn" data-course="cooking">Details</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Garden Maintenance Course -->
+                    <div class="course-card card-hover" data-category="short">
+                        <div class="img-hover-zoom">
+                            <img src="_images/screens/Garden maintenance .jpg" alt="Garden Maintenance Course"
+                                class="course-img">
+                        </div>
+                        <div class="course-content">
+                            <div class="course-header">
+                                <div class="course-icon">🌱</div>
+                                <div>
+                                    <h3 class="course-title">Garden Maintenance</h3>
+                                    <span class="course-badge">Short Skill</span>
+                                </div>
+                            </div>
+                            <p class="course-description">Essential gardening skills for residential and commercial
+                                property maintenance.</p>
+                            <div class="course-meta">
+                                <span class="course-duration">Duration: 6 weeks</span>
+                                <span class="course-price">From R750</span>
+                            </div>
+                            <div class="course-outcomes">
+                                <h4 class="outcomes-title">Learning Outcomes:</h4>
+                                <ul class="outcomes-list">
+                                    <li>Lawn care</li>
+                                    <li>Plant maintenance</li>
+                                    <li>Weed control</li>
+                                    <li>Basic landscaping</li>
+                                </ul>
+                            </div>
+                            <div class="course-actions">
+                                <a href="pricing.html" class="btn btn-accent">Add to Quote</a>
+                                <button class="btn btn-outline course-detail-btn"
+                                    data-course="garden-maintenance">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div id="no-results" class="no-results hidden">
+                    <div class="no-results-icon">🔍</div>
+                    <h3 class="no-results-title">No courses found</h3>
+                    <p class="no-results-description">Try adjusting your search or filter criteria</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Detail Modal -->
+        <div id="course-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-title" class="modal-title">Course Details</h2>
+                    <button class="modal-close" id="modal-close" aria-label="Close modal">
+                        ✕
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="modal-content">
+                        <!-- Content will be loaded dynamically -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="pricing.html" class="btn btn-primary">Get Pricing</a>
+                    <a href="enroll.html" class="btn btn-accent">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="cta-container">
+                <h2 class="cta-title">Ready to Start Your Learning Journey?</h2>
+                <p class="cta-description">Browse our pricing options and enroll in the course that fits your goals</p>
+                <div class="cta-buttons">
+                    <a href="pricing.html" class="btn btn-primary">View Pricing</a>
+                    <a href="enroll.html" class="btn btn-light">Enroll Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="footer-title">Empowering The Nation</h2>
+                    <p class="footer-description">We are committed to uplifting South African communities through
+                        practical skills development and accredited training programs. Our mission is to create
+                        sustainable economic opportunities for all.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-subtitle">Quick Links</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-subtitle">Resources</h3>
+                    <ul class="footer-nav">
+                        <li><a href="blog.html" class="footer-link">Blog & News</a></li>
+                        <li><a href="enroll.html" class="footer-link">Enrollment</a></li>
+                        <li><a href="#" class="footer-link">Success Stories</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-subtitle">Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <span>✉️</span>
+                            <span>info@empoweringthenation.co.za</span>
+                        </li>
+                        <li>
+                            <span>📞</span>
+                            <span>011 123 4567</span>
+                        </li>
+                        <li>
+                            <span>💬</span>
+                            <span>082 123 4567 (WhatsApp)</span>
+                        </li>
+                        <li>
+                            <span>📍</span>
+                            <span>123 Skills Street<br>Johannesburg, 2000<br>South Africa</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Empowering The Nation. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Terms of Service</a>
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Notifications -->
+    <div id="notification" class="notification hidden">
+        <div class="notification-content">
+            <div class="notification-body">
+                <div id="notification-icon" class="notification-icon"></div>
+                <div>
+                    <div id="notification-title" class="notification-title"></div>
+                    <div id="notification-message" class="notification-message"></div>
+                </div>
+                <button onclick="hideNotification()" class="notification-close" aria-label="Close notification">
+                    ✕
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

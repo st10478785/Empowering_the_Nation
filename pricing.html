@@ -1,0 +1,561 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Transparent pricing for all our skills training courses. Calculate your total cost and explore payment options at Empowering The Nation.">
+    <meta name="keywords"
+        content="pricing, course fees, payment plans, bursaries, employer sponsorship, skills training costs">
+    <title>Course Pricing - Empowering The Nation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="_images/logo/Logo.jpeg" alt="Empowering The Nation Logo" class="logo-img">
+                </div>
+
+                <nav class="desktop-nav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="courses.html" class="nav-link">Courses</a>
+                        <a href="pricing.html" class="nav-link active">Pricing</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+
+                    <div class="nav-cta">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" id="theme-toggle" title="Toggle dark/light theme">
+                            <span class="theme-slider"></span>
+                        </label>
+                        <a href="enroll.html" class="btn btn-primary active">Enroll Now</a>
+                    </div>
+                </nav>
+
+                <div class="mobile-menu-btn">
+                    <button class="mobile-menu-button" aria-label="Open menu">
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2 class="mobile-menu-title">Menu</h2>
+            <button class="close-mobile-menu" aria-label="Close menu">
+                <span class="close-icon"></span>
+            </button>
+        </div>
+
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="courses.html" class="mobile-nav-link">Courses</a>
+            <a href="pricing.html" class="mobile-nav-link active">Pricing</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            <div class="mobile-nav-cta">
+                <a href="enroll.html" class="btn btn-primary">Enroll Now</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumbs -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span class="breadcrumb-current">Pricing</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Course Pricing</h1>
+                    <p class="hero-description">Transparent pricing with flexible payment options and volume discounts
+                        for multiple courses</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Calculator -->
+        <section class="pricing-calculator">
+            <div class="calculator-container">
+                <div class="calculator-grid">
+                    <div class="calculator-form">
+                        <h2 class="calculator-title">Calculate Your Course Fees</h2>
+                        <p class="calculator-description">Select multiple courses to see volume discounts and payment
+                            breakdown</p>
+
+                        <div class="form-group">
+                            <label for="course-select" class="form-label">Select Courses</label>
+                            <select id="course-select" class="form-select" multiple size="7">
+                                <option value="first-aid" data-price="1500">First Aid Level 1 - R1,500</option>
+                                <option value="sewing" data-price="1500">Sewing Essentials - R1,500</option>
+                                <option value="landscaping" data-price="4500">Landscaping - R4,500</option>
+                                <option value="life-skills" data-price="1500">Life Skills - R1,500</option>
+                                <option value="child-minding" data-price="750">Child Minding - R750</option>
+                                <option value="cooking" data-price="750">Cooking - R750</option>
+                                <option value="garden-maintenance" data-price="750">Garden Maintenance - R750</option>
+                            </select>
+                            <small class="form-hint">Hold Ctrl/Cmd to select multiple courses. Volume discounts: 2
+                                courses (5%) | 3 courses (10%) | 4+ courses (15%)</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="funding-option" class="form-label">Funding Option</label>
+                            <select id="funding-option" class="form-select">
+                                <option value="full-payment">Full Payment (5% discount)</option>
+                                <option value="payment-plan">Payment Plan (3 installments)</option>
+                                <option value="employer">Employer Sponsored</option>
+                                <option value="bursary">Bursary Application</option>
+                            </select>
+                        </div>
+
+                        <div class="calculator-actions">
+                            <button id="calculate-btn" class="btn btn-primary">Calculate Total</button>
+                            <button id="reset-calculator" class="btn btn-outline">Reset</button>
+                        </div>
+                    </div>
+
+                    <div class="calculator-results">
+                        <div class="results-card">
+                            <h3 class="results-title">Your Quote</h3>
+                            <div class="results-content">
+                                <div class="result-item">
+                                    <span class="result-label">Course Fee:</span>
+                                    <span id="course-fee" class="result-value">R0.00</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Volume Discount:</span>
+                                    <span id="volume-discount" class="result-value">R0.00</span>
+                                </div>
+                                <div class="result-item">
+                                    <span class="result-label">Payment Discount:</span>
+                                    <span id="payment-discount" class="result-value">R0.00</span>
+                                </div>
+                                <div class="result-divider"></div>
+                                <div class="result-item total">
+                                    <span class="result-label">Total Amount:</span>
+                                    <span id="total-amount" class="result-value">R0.00</span>
+                                </div>
+                                <div class="payment-breakdown" id="payment-breakdown">
+                                    <!-- Payment breakdown will be shown here -->
+                                </div>
+                            </div>
+                            <div class="results-actions">
+                                <a href="enroll.html" class="btn btn-accent">Enroll Now</a>
+                                <button id="save-quote" class="btn btn-outline">Save Quote</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Pricing Table -->
+        <section class="pricing-table-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Course Pricing Overview</h2>
+                    <p class="section-description">All prices include learning materials and certification. Save more
+                        when you enroll in multiple courses!</p>
+                </div>
+
+                <div class="pricing-table">
+                    <div class="table-header">
+                        <div class="table-col course-col">Course</div>
+                        <div class="table-col duration-col">Duration</div>
+                        <div class="table-col price-col">Price</div>
+                        <div class="table-col action-col"></div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-col course-col">
+                            <div class="course-info">
+                                <div class="course-icon">🩹</div>
+                                <div>
+                                    <h3 class="course-name">First Aid Level 1</h3>
+                                    <p class="course-type">Short Skill</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-col duration-col">6 weeks</div>
+                        <div class="table-col price-col">R1,500</div>
+                        <div class="table-col action-col">
+                            <a href="enroll.html" class="btn btn-sm btn-primary">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-col course-col">
+                            <div class="course-info">
+                                <div class="course-icon">🧵</div>
+                                <div>
+                                    <h3 class="course-name">Sewing Essentials</h3>
+                                    <p class="course-type">Short Skill</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-col duration-col">6 weeks</div>
+                        <div class="table-col price-col">R1,500</div>
+                        <div class="table-col action-col">
+                            <a href="enroll.html" class="btn btn-sm btn-primary">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-col course-col">
+                            <div class="course-info">
+                                <div class="course-icon">🌿</div>
+                                <div>
+                                    <h3 class="course-name">Landscaping</h3>
+                                    <p class="course-type">Learnership</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-col duration-col">6 months</div>
+                        <div class="table-col price-col">R4,500</div>
+                        <div class="table-col action-col">
+                            <a href="enroll.html" class="btn btn-sm btn-primary">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-col course-col">
+                            <div class="course-info">
+                                <div class="course-icon">💡</div>
+                                <div>
+                                    <h3 class="course-name">Life Skills</h3>
+                                    <p class="course-type">Short Skill</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-col duration-col">6 weeks</div>
+                        <div class="table-col price-col">R1,500</div>
+                        <div class="table-col action-col">
+                            <a href="enroll.html" class="btn btn-sm btn-primary">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-col course-col">
+                            <div class="course-info">
+                                <div class="course-icon">👶</div>
+                                <div>
+                                    <h3 class="course-name">Child Minding</h3>
+                                    <p class="course-type">Short Skill</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-col duration-col">6 weeks</div>
+                        <div class="table-col price-col">R750</div>
+                        <div class="table-col action-col">
+                            <a href="enroll.html" class="btn btn-sm btn-primary">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-col course-col">
+                            <div class="course-info">
+                                <div class="course-icon">🍳</div>
+                                <div>
+                                    <h3 class="course-name">Cooking</h3>
+                                    <p class="course-type">Short Skill</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-col duration-col">6 weeks</div>
+                        <div class="table-col price-col">R750</div>
+                        <div class="table-col action-col">
+                            <a href="enroll.html" class="btn btn-sm btn-primary">Enroll</a>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-col course-col">
+                            <div class="course-info">
+                                <div class="course-icon">🌱</div>
+                                <div>
+                                    <h3 class="course-name">Garden Maintenance</h3>
+                                    <p class="course-type">Short Skill</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-col duration-col">6 weeks</div>
+                        <div class="table-col price-col">R750</div>
+                        <div class="table-col action-col">
+                            <a href="enroll.html" class="btn btn-sm btn-primary">Enroll</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Volume Discounts -->
+        <section class="group-discounts">
+            <div class="container">
+                <div class="discount-callout">
+                    <div class="discount-content">
+                        <h2 class="discount-title">Volume Discounts Available</h2>
+                        <p class="discount-description">Enroll in multiple courses and save on your total training costs
+                        </p>
+                        <div class="discount-tiers">
+                            <div class="tier">
+                                <div class="tier-range">1 course</div>
+                                <div class="tier-discount">No discount</div>
+                            </div>
+                            <div class="tier">
+                                <div class="tier-range">2 courses</div>
+                                <div class="tier-discount">5% discount</div>
+                            </div>
+                            <div class="tier">
+                                <div class="tier-range">3 courses</div>
+                                <div class="tier-discount">10% discount</div>
+                            </div>
+                            <div class="tier">
+                                <div class="tier-range">4+ courses</div>
+                                <div class="tier-discount">15% discount</div>
+                            </div>
+                        </div>
+                        <a href="enroll.html" class="btn btn-primary">Enroll in Multiple Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Payment Options -->
+        <section class="payment-options">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Flexible Payment Options</h2>
+                    <p class="section-description">We offer multiple ways to pay for your courses</p>
+                </div>
+
+                <div class="options-grid">
+                    <div class="option-card">
+                        <div class="option-icon">💳</div>
+                        <h3 class="option-title">Full Payment</h3>
+                        <p class="option-description">Pay the full course fee upfront and receive a 5% discount on your
+                            total.</p>
+                        <ul class="option-features">
+                            <li>5% discount applied</li>
+                            <li>Immediate enrollment</li>
+                            <li>No additional fees</li>
+                        </ul>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">📊</div>
+                        <h3 class="option-title">Payment Plan</h3>
+                        <p class="option-description">Spread your payments over 3 months with our interest-free payment
+                            plan.</p>
+                        <ul class="option-features">
+                            <li>3 equal installments</li>
+                            <li>No interest charged</li>
+                            <li>Small admin fee applies</li>
+                        </ul>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">🏢</div>
+                        <h3 class="option-title">Employer Sponsored</h3>
+                        <p class="option-description">Let your employer invest in your skills development with our
+                            corporate packages.</p>
+                        <ul class="option-features">
+                            <li>Corporate invoicing</li>
+                            <li>Bulk discounts available</li>
+                            <li>Customized reporting</li>
+                        </ul>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">🎓</div>
+                        <h3 class="option-title">Bursary Application</h3>
+                        <p class="option-description">Apply for financial assistance through our bursary program.</p>
+                        <ul class="option-features">
+                            <li>Financial need assessment</li>
+                            <li>Partial or full funding</li>
+                            <li>Limited spots available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-description">Find answers to common questions about course fees and payments</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I enroll in multiple courses?</h3>
+                        <p class="faq-answer">Yes! You can enroll in multiple courses and receive volume discounts: 2
+                            courses (5%), 3 courses (10%), 4+ courses (15%).</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">What is included in the course fee?</h3>
+                        <p class="faq-answer">All course fees include learning materials, practical equipment usage, and
+                            certification upon successful completion. There are no hidden costs.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Can I pay in installments?</h3>
+                        <p class="faq-answer">Yes, we offer a 3-month payment plan with no interest. A small
+                            administration fee of R100 applies to payment plans.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Are there any additional costs?</h3>
+                        <p class="faq-answer">The course fee covers everything you need to complete the training. Some
+                            courses may require specific personal protective equipment that you'll need to provide.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">Do you offer refunds?</h3>
+                        <p class="faq-answer">We offer a 7-day cooling-off period with full refunds. After course
+                            commencement, refunds are pro-rated based on completed sessions.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3 class="faq-question">How do bursaries work?</h3>
+                        <p class="faq-answer">Bursaries are awarded based on financial need and academic potential.
+                            Applications are reviewed monthly, and successful applicants receive partial or full
+                            funding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="footer-title">Empowering The Nation</h2>
+                    <p class="footer-description">We are committed to uplifting South African communities through
+                        practical skills development and accredited training programs. Our mission is to create
+                        sustainable economic opportunities for all.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-subtitle">Quick Links</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-subtitle">Resources</h3>
+                    <ul class="footer-nav">
+                        <li><a href="blog.html" class="footer-link">Blog & News</a></li>
+                        <li><a href="enroll.html" class="footer-link">Enrollment</a></li>
+                        <li><a href="#" class="footer-link">Success Stories</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-subtitle">Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <span>✉️</span>
+                            <span>info@empoweringthenation.co.za</span>
+                        </li>
+                        <li>
+                            <span>📞</span>
+                            <span>011 123 4567</span>
+                        </li>
+                        <li>
+                            <span>💬</span>
+                            <span>082 123 4567 (WhatsApp)</span>
+                        </li>
+                        <li>
+                            <span>📍</span>
+                            <span>123 Skills Street<br>Johannesburg, 2000<br>South Africa</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Empowering The Nation. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Terms of Service</a>
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Notifications -->
+    <div id="notification" class="notification hidden">
+        <div class="notification-content">
+            <div class="notification-body">
+                <div id="notification-icon" class="notification-icon"></div>
+                <div>
+                    <div id="notification-title" class="notification-title"></div>
+                    <div id="notification-message" class="notification-message"></div>
+                </div>
+                <button onclick="hideNotification()" class="notification-close" aria-label="Close notification">
+                    ✕
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

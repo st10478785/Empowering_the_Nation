@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Read our blog for career advice, industry insights, and success stories from Empowering The Nation.">
+    <meta name="keywords" content="blog, career advice, industry insights, success stories, skills development">
+    <title>Blog - Empowering The Nation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="_images/logo/Logo.jpeg" alt="Empowering The Nation Logo" class="logo-img">
+                    <span class="logo-text">Empowering The Nation</span>
+                </div>
+
+                <nav class="desktop-nav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="courses.html" class="nav-link">Courses</a>
+                        <a href="pricing.html" class="nav-link">Pricing</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="blog.html" class="nav-link active">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+
+                    <div class="nav-cta">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" id="theme-toggle" title="Toggle dark/light theme">
+                            <span class="theme-slider"></span>
+                        </label>
+                        <a href="enroll.html" class="btn btn-primary active">Enroll Now</a>
+                    </div>
+                </nav>
+
+                <div class="mobile-menu-btn">
+                    <button class="mobile-menu-button" aria-label="Open menu">
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2 class="mobile-menu-title">Menu</h2>
+            <button class="close-mobile-menu" aria-label="Close menu">
+                <span class="close-icon"></span>
+            </button>
+        </div>
+
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="courses.html" class="mobile-nav-link">Courses</a>
+            <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="blog.html" class="mobile-nav-link active">Blog</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            <div class="mobile-nav-cta">
+                <a href="enroll.html" class="btn btn-primary">Enroll Now</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumbs -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span class="breadcrumb-current">Blog</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Latest News & Tips</h1>
+                    <p class="hero-description">Stay updated with the latest in skills training and career development
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Content -->
+        <section class="blog-main">
+            <div class="container">
+                <div class="blog-layout">
+                    <!-- Main Content -->
+                    <div class="blog-content">
+                        <!-- Category Filters -->
+                        <div class="category-filters">
+                            <h2 class="filters-title">Filter by Category</h2>
+                            <div class="filter-buttons">
+                                <button class="filter-btn active" data-category="all">All Articles</button>
+                                <button class="filter-btn" data-category="skills-training">Skills Training</button>
+                                <button class="filter-btn" data-category="career-advice">Career Advice</button>
+                                <button class="filter-btn" data-category="success-stories">Success Stories</button>
+                                <button class="filter-btn" data-category="industry-news">Industry News</button>
+                            </div>
+                        </div>
+
+                        <!-- Search Bar -->
+                        <div class="search-container">
+                            <div class="search-bar">
+                                <input type="text" id="blog-search" placeholder="Search articles..."
+                                    class="search-input">
+                                <div class="search-icon">
+                                    <span>🔍</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Blog Posts -->
+                        <div class="blog-posts">
+                            <!-- Featured Post -->
+                            <article class="blog-card featured" data-category="skills-training">
+                                <div class="blog-image">
+                                    <img src="_images/screens/First aid.jpg" alt="First Aid Training" class="blog-img">
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-date">May 15, 2023</span>
+                                        <span class="blog-category">Skills Training</span>
+                                    </div>
+                                    <h2 class="blog-title">Why First Aid Training is Essential for Every Workplace</h2>
+                                    <p class="blog-excerpt">First aid skills aren't just for medical professionals.
+                                        Learn how basic training can create safer work environments, reduce accidents,
+                                        and even save lives in critical situations. Discover the legal requirements and
+                                        benefits of workplace first aid certification.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="blog-link">Read more</a>
+                                        <div class="read-time">
+                                            <span>🕒</span>
+                                            <span>5 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 2 -->
+                            <article class="blog-card" data-category="success-stories">
+                                <div class="blog-image">
+                                    <img src="_images/screens/Sewing.jpg" alt="Sewing Workshop" class="blog-img">
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-date">April 28, 2023</span>
+                                        <span class="blog-category">Success Stories</span>
+                                    </div>
+                                    <h2 class="blog-title">From Hobby to Business: Turning Sewing Skills into Income
+                                    </h2>
+                                    <p class="blog-excerpt">Discover how our graduates are transforming their sewing
+                                        skills into profitable small businesses. Learn practical tips for starting your
+                                        own clothing alteration or creation service, including marketing strategies and
+                                        pricing guidelines.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="blog-link">Read more</a>
+                                        <div class="read-time">
+                                            <span>🕒</span>
+                                            <span>7 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 3 -->
+                            <article class="blog-card" data-category="industry-news">
+                                <div class="blog-image">
+                                    <img src="_images/screens/Garden maintenance.jpg" alt="Garden Maintenance"
+                                        class="blog-img">
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-date">April 10, 2023</span>
+                                        <span class="blog-category">Industry News</span>
+                                    </div>
+                                    <h2 class="blog-title">The Growing Demand for Professional Garden Maintenance
+                                        Services</h2>
+                                    <p class="blog-excerpt">Landscaping and garden maintenance skills are in high
+                                        demand. Learn how to capitalize on this growing market and build a sustainable
+                                        business in the green industry. Explore seasonal opportunities and client
+                                        acquisition strategies.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="blog-link">Read more</a>
+                                        <div class="read-time">
+                                            <span>🕒</span>
+                                            <span>6 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 4 -->
+                            <article class="blog-card" data-category="career-advice">
+                                <div class="blog-image">
+                                    <img src="_images/screens/Child minding.jpg" alt="Child Care" class="blog-img">
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-date">March 22, 2023</span>
+                                        <span class="blog-category">Career Advice</span>
+                                    </div>
+                                    <h2 class="blog-title">How to Start a Professional Child Minding Service</h2>
+                                    <p class="blog-excerpt">Learn the essential steps to establish a reputable child
+                                        minding service. From certifications to creating a safe environment, we cover
+                                        everything you need to know about starting your childcare business, including
+                                        legal requirements and insurance considerations.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="blog-link">Read more</a>
+                                        <div class="read-time">
+                                            <span>🕒</span>
+                                            <span>8 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 5 -->
+                            <article class="blog-card" data-category="skills-training">
+                                <div class="blog-image">
+                                    <img src="_images/screens/Cooking.jpg" alt="Cooking Class" class="blog-img">
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-date">March 5, 2023</span>
+                                        <span class="blog-category">Skills Training</span>
+                                    </div>
+                                    <h2 class="blog-title">Essential Cooking Skills That Can Boost Your Career</h2>
+                                    <p class="blog-excerpt">Culinary skills are always in demand. Discover which cooking
+                                        techniques are most valuable in the job market and how you can monetize your
+                                        passion for food. Learn about catering opportunities and food business
+                                        regulations.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="blog-link">Read more</a>
+                                        <div class="read-time">
+                                            <span>🕒</span>
+                                            <span>5 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Post 6 -->
+                            <article class="blog-card" data-category="career-advice">
+                                <div class="blog-image">
+                                    <img src="_images/screens/Life skill.jpg" alt="Life Skills" class="blog-img">
+                                </div>
+                                <div class="blog-card-content">
+                                    <div class="blog-meta">
+                                        <span class="blog-date">February 18, 2023</span>
+                                        <span class="blog-category">Career Advice</span>
+                                    </div>
+                                    <h2 class="blog-title">Building Confidence Through Practical Life Skills</h2>
+                                    <p class="blog-excerpt">Learn how developing essential life skills can transform
+                                        your personal and professional life. From communication to financial management,
+                                        discover the skills that employers value most and how to showcase them
+                                        effectively.</p>
+                                    <div class="blog-footer">
+                                        <a href="#" class="blog-link">Read more</a>
+                                        <div class="read-time">
+                                            <span>🕒</span>
+                                            <span>6 min read</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- No Results Message -->
+                        <div id="no-blog-results" class="no-results hidden">
+                            <div class="no-results-icon">🔍</div>
+                            <h3 class="no-results-title">No articles found</h3>
+                            <p class="no-results-description">Try adjusting your search or filter criteria</p>
+                        </div>
+
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <button class="pagination-btn active">1</button>
+                            <button class="pagination-btn">2</button>
+                            <button class="pagination-btn">3</button>
+                            <button class="pagination-btn">...</button>
+                            <button class="pagination-btn">8</button>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar -->
+                    <aside class="blog-sidebar">
+                        <!-- Search -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Search Articles</h3>
+                            <div class="search-box">
+                                <input type="text" placeholder="Search..." class="search-input" id="sidebar-search">
+                                <button class="search-btn" aria-label="Search">🔍</button>
+                            </div>
+                        </div>
+
+                        <!-- Categories -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Categories</h3>
+                            <ul class="categories-list">
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Skills Training</a>
+                                    <span class="category-count">12</span>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Career Advice</a>
+                                    <span class="category-count">8</span>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Success Stories</a>
+                                    <span class="category-count">15</span>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Industry News</a>
+                                    <span class="category-count">7</span>
+                                </li>
+                                <li class="category-item">
+                                    <a href="#" class="category-link">Tips & Tricks</a>
+                                    <span class="category-count">9</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Recent Posts -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Recent Posts</h3>
+                            <ul class="recent-posts">
+                                <li class="recent-post">
+                                    <a href="#" class="recent-post-link">
+                                        <div class="recent-post-image">
+                                            <div class="image-placeholder">🩹</div>
+                                        </div>
+                                        <div class="recent-post-content">
+                                            <h4 class="recent-post-title">Why First Aid Training is Essential</h4>
+                                            <p class="recent-post-date">May 15, 2023</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="recent-post">
+                                    <a href="#" class="recent-post-link">
+                                        <div class="recent-post-image">
+                                            <div class="image-placeholder">🧵</div>
+                                        </div>
+                                        <div class="recent-post-content">
+                                            <h4 class="recent-post-title">Sewing Skills into Business Income</h4>
+                                            <p class="recent-post-date">April 28, 2023</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="recent-post">
+                                    <a href="#" class="recent-post-link">
+                                        <div class="recent-post-image">
+                                            <div class="image-placeholder">🌿</div>
+                                        </div>
+                                        <div class="recent-post-content">
+                                            <h4 class="recent-post-title">Garden Maintenance Demand Growing</h4>
+                                            <p class="recent-post-date">April 10, 2023</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Newsletter -->
+                        <div class="sidebar-widget newsletter-widget">
+                            <h3 class="widget-title">Subscribe to Newsletter</h3>
+                            <p class="newsletter-description">Get the latest updates on courses, success stories, and
+                                career tips.</p>
+                            <form class="newsletter-form" id="newsletter-form">
+                                <input type="email" placeholder="Your email address" class="newsletter-input" required>
+                                <button type="submit" class="btn btn-light">Subscribe</button>
+                            </form>
+                        </div>
+
+                        <!-- Tags -->
+                        <div class="sidebar-widget">
+                            <h3 class="widget-title">Popular Tags</h3>
+                            <div class="tags-container">
+                                <a href="#" class="tag">Training</a>
+                                <a href="#" class="tag">Skills</a>
+                                <a href="#" class="tag">Career</a>
+                                <a href="#" class="tag">Business</a>
+                                <a href="#" class="tag">First Aid</a>
+                                <a href="#" class="tag">Sewing</a>
+                                <a href="#" class="tag">Landscaping</a>
+                                <a href="#" class="tag">Cooking</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="cta-section">
+            <div class="container">
+                <h2 class="cta-title">Want to Share Your Story?</h2>
+                <p class="cta-description">If you're a graduate with a success story to share, we'd love to feature you
+                    on our blog!</p>
+                <a href="contact.html" class="btn btn-light">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="footer-title">Empowering The Nation</h2>
+                    <p class="footer-description">We are committed to uplifting South African communities through
+                        practical skills development and accredited training programs. Our mission is to create
+                        sustainable economic opportunities for all.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-subtitle">Quick Links</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-subtitle">Resources</h3>
+                    <ul class="footer-nav">
+                        <li><a href="blog.html" class="footer-link">Blog & News</a></li>
+                        <li><a href="enroll.html" class="footer-link">Enrollment</a></li>
+                        <li><a href="#" class="footer-link">Success Stories</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-subtitle">Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <span>✉️</span>
+                            <span>info@empoweringthenation.co.za</span>
+                        </li>
+                        <li>
+                            <span>📞</span>
+                            <span>011 123 4567</span>
+                        </li>
+                        <li>
+                            <span>💬</span>
+                            <span>082 123 4567 (WhatsApp)</span>
+                        </li>
+                        <li>
+                            <span>📍</span>
+                            <span>123 Skills Street<br>Johannesburg, 2000<br>South Africa</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Empowering The Nation. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Terms of Service</a>
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Notifications -->
+    <div id="notification" class="notification hidden">
+        <div class="notification-content">
+            <div class="notification-body">
+                <div id="notification-icon" class="notification-icon"></div>
+                <div>
+                    <div id="notification-title" class="notification-title"></div>
+                    <div id="notification-message" class="notification-message"></div>
+                </div>
+                <button onclick="hideNotification()" class="notification-close" aria-label="Close notification">
+                    ✕
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Enroll in Empowering The Nation skills training courses. Start your journey to better employment opportunities today.">
+    <meta name="keywords" content="enroll, application, skills training, courses, South Africa">
+    <title>Enroll Now - Empowering The Nation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="_images/logo/Logo.jpeg" alt="Empowering The Nation Logo" class="logo-img">
+                    <span class="logo-text">Empowering The Nation</span>
+                </div>
+
+                <nav class="desktop-nav">
+                    <div class="nav-links">
+                        <a href="index.html" class="nav-link">Home</a>
+                        <a href="courses.html" class="nav-link">Courses</a>
+                        <a href="pricing.html" class="nav-link">Pricing</a>
+                        <a href="about.html" class="nav-link">About</a>
+                        <a href="blog.html" class="nav-link">Blog</a>
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </div>
+
+                    <div class="nav-cta">
+                        <label class="theme-switch" for="theme-toggle">
+                            <input type="checkbox" id="theme-toggle" title="Toggle dark/light theme">
+                            <span class="theme-slider"></span>
+                        </label>
+                        <a href="enroll.html" class="btn btn-primary active">Enroll Now</a>
+                    </div>
+                </nav>
+
+                <div class="mobile-menu-btn">
+                    <button class="mobile-menu-button" aria-label="Open menu">
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                        <span class="menu-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-header">
+            <h2 class="mobile-menu-title">Menu</h2>
+            <button class="close-mobile-menu" aria-label="Close menu">
+                <span class="close-icon"></span>
+            </button>
+        </div>
+
+        <nav class="mobile-nav">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="courses.html" class="mobile-nav-link">Courses</a>
+            <a href="pricing.html" class="mobile-nav-link">Pricing</a>
+            <a href="about.html" class="mobile-nav-link">About</a>
+            <a href="blog.html" class="mobile-nav-link">Blog</a>
+            <a href="contact.html" class="mobile-nav-link">Contact</a>
+
+            <div class="mobile-nav-cta">
+                <a href="enroll.html" class="btn btn-primary active">Enroll Now</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Breadcrumbs -->
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav aria-label="Breadcrumb">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item">
+                            <a href="index.html" class="breadcrumb-link">Home</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <span class="breadcrumb-current">Enroll Now</span>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Apply to Empowering The Nation</h1>
+                    <p class="hero-description">It takes about 7 minutes to complete your application</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Progress Bar -->
+        <section class="progress-section">
+            <div class="container">
+                <div class="progress-container">
+                    <div class="progress-indicators">
+                        <div class="progress-indicator active">
+                            <div class="indicator-number">1</div>
+                            <div class="indicator-label">Personal Info</div>
+                        </div>
+                        <div class="progress-indicator">
+                            <div class="indicator-number">2</div>
+                            <div class="indicator-label">Course Selection</div>
+                        </div>
+                        <div class="progress-indicator">
+                            <div class="indicator-number">3</div>
+                            <div class="indicator-label">Funding</div>
+                        </div>
+                        <div class="progress-indicator">
+                            <div class="indicator-number">4</div>
+                            <div class="indicator-label">Review & Submit</div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 25%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Application Form -->
+        <section class="enrollment-form-section">
+            <div class="container">
+                <div class="enrollment-form-container">
+                    <form id="enrollment-form" class="enrollment-form">
+                        <!-- Step 1: Personal Information -->
+                        <div id="step-1" class="form-step active">
+                            <h2 class="step-title">Personal Information</h2>
+
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="first-name" class="form-label required-field">First Name</label>
+                                    <input type="text" id="first-name" name="first-name" required class="form-input"
+                                        placeholder="Enter your first name">
+                                    <div class="error-message">Please enter your first name</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="last-name" class="form-label required-field">Last Name</label>
+                                    <input type="text" id="last-name" name="last-name" required class="form-input"
+                                        placeholder="Enter your last name">
+                                    <div class="error-message">Please enter your last name</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="id-number" class="form-label required-field">ID Number</label>
+                                    <input type="text" id="id-number" name="id-number" required class="form-input"
+                                        placeholder="Enter your ID number">
+                                    <div class="error-message">Please enter a valid 13-digit ID number</div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone" class="form-label required-field">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" required class="form-input"
+                                        placeholder="Enter your phone number">
+                                    <div class="error-message">Please enter a valid phone number</div>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="email" class="form-label required-field">Email Address</label>
+                                    <input type="email" id="email" name="email" required class="form-input"
+                                        placeholder="Enter your email address">
+                                    <div class="error-message">Please enter a valid email address</div>
+                                </div>
+
+                                <div class="form-group full-width">
+                                    <label for="address" class="form-label required-field">Physical Address</label>
+                                    <textarea id="address" name="address" required rows="3" class="form-textarea"
+                                        placeholder="Enter your physical address"></textarea>
+                                    <div class="error-message">Please enter your physical address</div>
+                                </div>
+                            </div>
+
+                            <div class="form-navigation">
+                                <div></div> <!-- Empty div for spacing -->
+                                <button type="button" class="btn btn-primary next-step" data-next="2">
+                                    Next: Course Selection
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Course Selection -->
+                        <div id="step-2" class="form-step">
+                            <h2 class="step-title">Course Selection</h2>
+
+                            <div class="form-group">
+                                <label for="course" class="form-label required-field">Select Course</label>
+                                <select id="course" name="course" required class="form-select">
+                                    <option value="">Choose a course...</option>
+                                    <option value="first-aid">First Aid Level 1</option>
+                                    <option value="sewing">Sewing Essentials</option>
+                                    <option value="landscaping">Landscaping</option>
+                                    <option value="life-skills">Life Skills</option>
+                                    <option value="child-minding">Child Minding</option>
+                                    <option value="cooking">Cooking</option>
+                                    <option value="garden-maintenance">Garden Maintenance</option>
+                                </select>
+                                <div class="error-message">Please select a course</div>
+                            </div>
+
+                            <div class="schedule-section">
+                                <h3 class="section-subtitle">Preferred Schedule</h3>
+                                <div class="schedule-options">
+                                    <div class="schedule-option">
+                                        <input type="radio" id="weekday" name="schedule" value="weekday" title="Select Weekdays (Mon-Fri)">
+                                        <label for="weekday" class="visually-hidden">Weekdays (Mon-Fri)</label>
+                                        <div class="option-card">
+                                            <div class="option-icon">📅</div>
+                                            <div class="option-title">Weekdays (Mon-Fri)</div>
+                                            <div class="option-description">Full-day sessions during weekdays</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-option">
+                                        <input type="radio" id="weekend" name="schedule" value="weekend" title="Select Weekend (Sat-Sun)">
+                                        <label for="weekend" class="visually-hidden">Weekend (Sat-Sun)</label>
+                                        <div class="option-card">
+                                            <div class="option-icon">🏖️</div>
+                                            <div class="option-title">Weekends (Sat-Sun)</div>
+                                            <div class="option-description">Perfect for working individuals</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-option">
+                                        <input type="radio" id="evening" name="schedule" value="evening">
+                                        <div class="option-card">
+                                            <div class="option-icon">🌙</div>
+                                            <div class="option-title">Evenings (6pm-9pm)</div>
+                                            <div class="option-description">After work sessions</div>
+                                        </div>
+                                    </div>
+                                    <div class="schedule-option">
+                                        <input type="radio" id="flexible" name="schedule" value="flexible">
+                                        <div class="option-card">
+                                            <div class="option-icon">🔄</div>
+                                            <div class="option-title">Flexible</div>
+                                            <div class="option-description">Mix of different schedules</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="error-message schedule-error">Please select a preferred schedule</div>
+                            </div>
+
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="1">
+                                    <span class="btn-icon">←</span>
+                                    Back
+                                </button>
+                                <button type="button" class="btn btn-primary next-step" data-next="3">
+                                    Next: Funding Options
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Funding -->
+                        <div id="step-3" class="form-step">
+                            <h2 class="step-title">Funding Options</h2>
+
+                            <div class="funding-options">
+                                <h3 class="section-subtitle">How will you fund your studies?</h3>
+                                <div class="funding-options">
+                                    <div class="funding-option">
+                                        <input type="radio" id="self-funded" name="funding" value="self-funded"
+                                            required>
+                                        <div class="option-card">
+                                            <div class="option-icon">💳</div>
+                                            <div class="option-title">Self-funded</div>
+                                            <div class="option-description">I will pay for the course myself</div>
+                                        </div>
+                                    </div>
+                                    <div class="funding-option">
+                                        <input type="radio" id="employer" name="funding" value="employer">
+                                        <div class="option-card">
+                                            <div class="option-icon">🏢</div>
+                                            <div class="option-title">Employer sponsored</div>
+                                            <div class="option-description">My employer will pay for my studies</div>
+                                        </div>
+                                    </div>
+                                    <div class="funding-option">
+                                        <input type="radio" id="bursary" name="funding" value="bursary">
+                                        <div class="option-card">
+                                            <div class="option-icon">🎓</div>
+                                            <div class="option-title">Bursary application</div>
+                                            <div class="option-description">I will apply for a bursary</div>
+                                        </div>
+                                    </div>
+                                    <div class="funding-option">
+                                        <input type="radio" id="payment-plan" name="funding" value="payment-plan">
+                                        <div class="option-card">
+                                            <div class="option-icon">📊</div>
+                                            <div class="option-title">Payment plan</div>
+                                            <div class="option-description">I would like a payment plan</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="error-message funding-error">Please select a funding option</div>
+                            </div>
+
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="2">
+                                    <span class="btn-icon">←</span>
+                                    Back
+                                </button>
+                                <button type="button" class="btn btn-primary next-step" data-next="4">
+                                    Next: Review & Submit
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Review & Submit -->
+                        <div id="step-4" class="form-step">
+                            <h2 class="step-title">Review Your Application</h2>
+
+                            <div class="review-section">
+                                <div class="review-category">
+                                    <h3 class="review-title">Personal Information</h3>
+                                    <div class="review-grid">
+                                        <div class="review-item">
+                                            <span class="review-label">Full Name:</span>
+                                            <span id="review-name" class="review-value">-</span>
+                                        </div>
+                                        <div class="review-item">
+                                            <span class="review-label">ID Number:</span>
+                                            <span id="review-id" class="review-value">-</span>
+                                        </div>
+                                        <div class="review-item">
+                                            <span class="review-label">Phone Number:</span>
+                                            <span id="review-phone" class="review-value">-</span>
+                                        </div>
+                                        <div class="review-item">
+                                            <span class="review-label">Email Address:</span>
+                                            <span id="review-email" class="review-value">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="review-category">
+                                    <h3 class="review-title">Course Selection</h3>
+                                    <div class="review-grid">
+                                        <div class="review-item">
+                                            <span class="review-label">Selected Course:</span>
+                                            <span id="review-course" class="review-value">-</span>
+                                        </div>
+                                        <div class="review-item">
+                                            <span class="review-label">Preferred Schedule:</span>
+                                            <span id="review-schedule" class="review-value">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="review-category">
+                                    <h3 class="review-title">Funding Information</h3>
+                                    <div class="review-grid">
+                                        <div class="review-item">
+                                            <span class="review-label">Funding Option:</span>
+                                            <span id="review-funding" class="review-value">-</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="documents-section">
+                                <h3 class="section-subtitle">Required Documents</h3>
+                                <p>Please have the following documents ready to submit after application:</p>
+                                <ul class="documents-list">
+                                    <li>Copy of ID document or passport</li>
+                                    <li>Proof of address (utility bill or bank statement)</li>
+                                    <li>Highest qualification certificate (if applicable)</li>
+                                    <li>Proof of income or employment (if applicable)</li>
+                                </ul>
+                            </div>
+
+                            <div class="consent-section">
+                                <h3 class="section-subtitle">Consent</h3>
+                                <div class="consent-options">
+                                    <label class="consent-option">
+                                        <input type="checkbox" name="terms" required>
+                                        <span class="consent-text">I agree to the <a href="#" class="consent-link">Terms
+                                                and Conditions</a></span>
+                                    </label>
+                                    <label class="consent-option">
+                                        <input type="checkbox" name="privacy" required>
+                                        <span class="consent-text">I consent to the processing of my personal
+                                            information as outlined in the <a href="#" class="consent-link">Privacy
+                                                Policy</a></span>
+                                    </label>
+                                    <label class="consent-option">
+                                        <input type="checkbox" name="marketing">
+                                        <span class="consent-text">I consent to photographs being taken during training
+                                            for marketing purposes</span>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-navigation">
+                                <button type="button" class="btn btn-outline prev-step" data-prev="3">
+                                    <span class="btn-icon">←</span>
+                                    Back
+                                </button>
+                                <button type="submit" class="btn btn-primary">
+                                    <span class="btn-icon">📨</span>
+                                    Submit Application
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Success Message -->
+                        <div class="success-message">
+                            <div class="success-icon">✅</div>
+                            <h3 class="success-title">Application Submitted Successfully!</h3>
+                            <p class="success-description">Thank you for your application! We will contact you within 2
+                                business days to guide you through the next steps.</p>
+                            <a href="index.html" class="btn btn-primary">Return to Homepage</a>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Support Information -->
+                <div class="support-section">
+                    <h3 class="support-title">Need Help With Your Application?</h3>
+                    <p class="support-description">Our support team is here to assist you with the enrollment process.
+                    </p>
+                    <div class="support-contacts">
+                        <a href="tel:+27111234567" class="support-contact">
+                            <span class="contact-icon">📞</span>
+                            <span class="contact-info">011 123 4567</span>
+                        </a>
+                        <a href="mailto:info@empoweringthenation.co.za" class="support-contact">
+                            <span class="contact-icon">✉️</span>
+                            <span class="contact-info">info@empoweringthenation.co.za</span>
+                        </a>
+                        <a href="https://wa.me/27821234567" class="support-contact">
+                            <span class="contact-icon">💬</span>
+                            <span class="contact-info">082 123 4567 (WhatsApp)</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h2 class="footer-title">Empowering The Nation</h2>
+                    <p class="footer-description">We are committed to uplifting South African communities through
+                        practical skills development and accredited training programs. Our mission is to create
+                        sustainable economic opportunities for all.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-link" aria-label="WhatsApp">💬</a>
+                        <a href="#" class="social-link" aria-label="LinkedIn">💼</a>
+                        <a href="#" class="social-link" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-subtitle">Quick Links</h3>
+                    <ul class="footer-nav">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
+                        <li><a href="pricing.html" class="footer-link">Pricing</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links">
+                    <h3 class="footer-subtitle">Resources</h3>
+                    <ul class="footer-nav">
+                        <li><a href="blog.html" class="footer-link">Blog & News</a></li>
+                        <li><a href="enroll.html" class="footer-link">Enrollment</a></li>
+                        <li><a href="#" class="footer-link">Success Stories</a></li>
+                        <li><a href="#" class="footer-link">FAQs</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-subtitle">Contact Information</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <span>✉️</span>
+                            <span>info@empoweringthenation.co.za</span>
+                        </li>
+                        <li>
+                            <span>📞</span>
+                            <span>011 123 4567</span>
+                        </li>
+                        <li>
+                            <span>💬</span>
+                            <span>082 123 4567 (WhatsApp)</span>
+                        </li>
+                        <li>
+                            <span>📍</span>
+                            <span>123 Skills Street<br>Johannesburg, 2000<br>South Africa</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="footer-divider">
+
+            <div class="footer-bottom">
+                <p class="copyright">© 2025 Empowering The Nation. All rights reserved.</p>
+                <div class="legal-links">
+                    <a href="#" class="legal-link">Terms of Service</a>
+                    <a href="#" class="legal-link">Privacy Policy</a>
+                    <a href="#" class="legal-link">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success/Error Notifications -->
+    <div id="notification" class="notification hidden">
+        <div class="notification-content">
+            <div class="notification-body">
+                <div id="notification-icon" class="notification-icon"></div>
+                <div>
+                    <div id="notification-title" class="notification-title"></div>
+                    <div id="notification-message" class="notification-message"></div>
+                </div>
+                <button onclick="hideNotification()" class="notification-close" aria-label="Close notification">
+                    ✕
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
