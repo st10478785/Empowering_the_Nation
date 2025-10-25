@@ -3,9 +3,9 @@ Group 1
 
 ST10478785, Vishay Gosai
 
-ST104
+ST10472309, Joshua Zulu
 
-ST104
+ST10476635, Kemotheo Tlhale 
 
 [Empowering The Natio (Logo)](_images/logo/Logo.jpeg)
 
@@ -139,27 +139,14 @@ project-root/
 ### Core Modules
 
 #### 1. Theme Management
-```javascript
-// Dark/Light theme toggle with localStorage persistence
-function initializeTheme() {
-    const themeToggle = document.getElementById('theme-toggle');
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    
-    document.documentElement.setAttribute('data-theme', currentTheme);
-    if (themeToggle) themeToggle.checked = currentTheme === 'dark';
-}
-```
+
+Dark/Light theme toggle with localStorage persistence
+
 
 #### 2. Mobile Navigation
-```javascript
-// Mobile menu functionality with smooth animations
-function initializeMobileMenu() {
-    const mobileMenuBtn = document.querySelector('.mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const mobileOverlay = document.getElementById('mobile-overlay');
-    const closeMenuBtn = document.querySelector('.close-mobile-menu');
-}
-```
+
+Mobile menu functionality with smooth animations
+
 
 #### 3. Form Handling
 - Multi-step form navigation with validation
@@ -168,34 +155,17 @@ function initializeMobileMenu() {
 - Form data persistence between steps
 
 #### 4. Course Filtering & Search
-```javascript
-// Course and blog filtering with search functionality
-function initializeCourseFilters() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const searchInput = document.getElementById('course-search');
-    const courseGrid = document.getElementById('courses-grid');
-}
-```
+
+ Course and blog filtering with search functionality
+
 
 #### 5. Pricing Calculator
-```javascript
-// Interactive pricing calculator with dynamic updates
-function initializePricingCalculator() {
-    const courseSelect = document.getElementById('course-select');
-    const fundingOption = document.getElementById('funding-option');
-    const calculateBtn = document.getElementById('calculate-btn');
-}
-```
+ Interactive pricing calculator with dynamic updates
+
 
 #### 6. Testimonial Slider
-```javascript
-// Smooth testimonial carousel with navigation controls
-function initializeTestimonialSlider() {
-    const track = document.getElementById('testimonial-track');
-    const prevBtn = document.getElementById('testimonial-prev');
-    const nextBtn = document.getElementById('testimonial-next');
-}
-```
+ Smooth testimonial carousel with navigation controls
+
 
 ### Event Handlers
 - Click events for navigation and UI interactions
